@@ -5,3 +5,7 @@ bin/
 
 # Arquivos temporários de depuração
 obj/
+
+# Ignorando a resolução dos exercícios
+Atv01R.cs
+Atv02R.cs
