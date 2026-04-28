@@ -9,3 +9,46 @@ Regras:
 - apresentar cada operação de forma organizada
 - mostrar a tabuada completa do número informado pelo usuário
 */
+
+public static class Atv05
+{
+    public static void Executar()
+    {
+        Console.Clear();
+        int numero = 0;
+        string resposta = "";
+        do
+        {
+            Console.WriteLine("Digite um numero: ");
+            Console.WriteLine("");
+            numero = int.Parse(Console.ReadLine()!);
+            int multiplicação = 0;
+            if (numero < 0)
+            {
+                Console.WriteLine("Programa encerrado, numero negativo detectado.");
+                break;
+            }
+            else
+            {
+                while (multiplicação <= 10)
+                {
+
+                    Console.WriteLine("");
+                    Console.WriteLine($"{numero} X {multiplicação} = {numero * multiplicação}");
+                    Console.WriteLine("");
+                    multiplicação++;
+                }
+            }
+            if (numero >= 0)
+            {
+                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("deseja calcular a tabuada de um numero? (s/n)");
+                resposta = Console.ReadLine()!;
+            }
+        } while (resposta == "s" || resposta == "S");
+        if (numero >= 0)
+        {
+            Console.WriteLine("Programa encerrado.");
+        }
+    }
+}

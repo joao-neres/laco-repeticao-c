@@ -14,3 +14,26 @@ Observação: Vestigios de uso de IA, atividade zerada,
 ou código copiado de terceiros sem a devida citação, serão penalizados.
 
 */
+
+public static class Atv04
+{
+    public static void Executar()
+    {
+        Console.Clear();
+        Console.WriteLine("Digite um numero");
+        Console.WriteLine("");
+        int numero = int.Parse(Console.ReadLine()!);
+        int multiplicação = 0;
+        Console.Clear();
+        Console.WriteLine("TABUADA ✖️");
+
+        while (multiplicação <= 10)
+        {
+            Console.WriteLine("");
+            Console.WriteLine($"{numero} X {multiplicação} = {numero * multiplicação}");
+            Console.WriteLine("");
+            multiplicação++;
+        }
+        Console.WriteLine("");
+    }
+}

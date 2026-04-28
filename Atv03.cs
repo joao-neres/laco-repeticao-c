@@ -20,6 +20,27 @@ public static class Atv03
 {
     public static void Executar()
     {
+        string opcao;
+        string placaCarro;
+        int qntdCarro = 0;
 
+        Console.WriteLine("Deseja adicionar alguma placa s/n");
+        opcao = Console.ReadLine()!;
+        Console.Clear();
+
+        while (opcao == "s" || opcao == "S")
+        {
+            Console.WriteLine("Registre a placa");
+            Console.WriteLine("");
+            Console.Write("Insira a placa do carro: ");
+            placaCarro = Console.ReadLine()!;
+
+            qntdCarro++;
+            Console.WriteLine("Deseja continuar: s/n");
+            opcao = Console.ReadLine()!;
+            Console.Clear();
+        }
+        Console.WriteLine("Voce nao vai registrar mais placas");
+        Console.WriteLine($"Quantidade de placas registradas foram: {qntdCarro}");
     }
 }
